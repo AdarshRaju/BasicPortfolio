@@ -1,0 +1,203 @@
+:root{
+    --blue1: rgb(177, 192, 206);
+    --blue2: rgb(216, 230, 242);
+    --blue3: rgb(5, 38, 67);
+    --purple1: rgb(83, 77, 171);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Lexend Giga", sans-serif;
+    font-family: "Roboto", sans-serif;
+    /* font-family: "Chocolate Classical Sans", sans-serif; */
+    /* font-family: "Merriweather", serif; */
+    min-height: 100vh;
+    margin: 0;
+    padding: 0.5em;
+    color: white;
+    position: relative;
+    /* background-image: url("./images/leather-brown.png"); */
+    /* background: linear-gradient(to bottom left, var(--blue1), var(--blue2)); */
+    /* background-image: url("./images/DD-Forest-Background-60012-Preview.jpg");
+    background-size:cover; */
+    
+    
+}
+
+body::before{
+    content: "";
+  position: absolute;
+  min-height: 100vh;
+  padding: 0.5em;
+  inset: 0; 
+  background-image: url("./images/DD-Forest-Background-60012-Preview.jpg");
+  background-size:cover;
+  background-repeat: repeat;
+  background-position-y: 20%;
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 0.8; 
+  z-index: -1;
+  margin: 0;
+}
+
+/* Header items */
+header{
+    display: flex;
+}
+
+nav{
+    font-size: 0.75em;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+#mainnav{
+    display: flex;
+    font-size: 0.85em;
+    word-spacing: 0;
+}
+
+#mainnav>a{
+    color: var(--purple1);
+    font-weight: 700;
+    background: var(--blue1);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: all ease-in 0.15s;
+}
+
+#mainnav>a:hover{
+    color: var(--purple1);
+    background: var(--blue3);
+}
+
+#profilemaincontainer{
+      display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#mainnav>*{
+    margin-left: 7px;
+}
+
+
+
+
+/* Main section items */
+#profilepiccontainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--blue3);
+    font-family: "Merriweather", serif;
+    margin: 6em 0;
+}
+
+#profilename{
+    color: var(--blue3);
+}
+
+#adarshpic{
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+#jobtitle{
+    opacity: 0.7;
+}
+
+
+
+Summary{
+    width: 45%;
+    /* display: flex; */
+    /* margin-left: 23%; */
+    align-self: center;
+    margin-bottom: 4em;
+}
+
+#titlename{
+    color: var(--blue3);
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+
+/* Footer items */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 90vw;
+}
+
+#bottomnav{
+    display: flex;
+    justify-self: space-between;
+    align-self: center;
+    font-size: 1.2em;
+    
+    
+}
+
+#bottomnav>a{
+    color: var(--blue2);
+    box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.303);
+    margin: 0.3em 1em;
+}
+
+#copyright{
+    align-self: center;
+    justify-self: center;
+    font-size: 0.7em;
+}
+
+#bottomnav>*{
+    margin-left: 7px;
+    padding: 0.3em 0.5em;
+    background: var(--blue3);
+    border-radius: 0.1em;
+    transition: all ease-in 0.1s;
+}
+
+#bottomnav>*:hover{
+    /* padding: 0.4em 0.6em; */
+    border-radius: 4em;
+}
+
+
+/* For the Projects.html, education.html pages */
+
+#projectsmainsection, #educationmainsection, #othermainsection, #contactmainsection{
+    justify-self: flex-start;
+    margin-top: 0;
+    flex: 1 1 auto;
+    margin-left: 2em;
+    margin-top: 4em;
+}
+
+#projectsmaincontainer, #educationmaincontainer, #othermaincontainer, #contactmaincontainer{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 2em;
+    color: black;
+}
+
+#part2projects, #edupart2, #otherpart2{
+    color: white;
+}
+
+
+
+/* For the  page */
+
