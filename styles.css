@@ -2,6 +2,7 @@
     --blue1: rgb(177, 192, 206);
     --blue2: rgb(216, 230, 242);
     --blue3: rgb(5, 38, 67);
+    --blue4: rgb(20, 62, 100);
     --purple1: rgb(83, 77, 171);
 }
 
@@ -18,6 +19,8 @@ body{
     padding: 0.5em;
     color: white;
     position: relative;
+    /* letter-spacing: 0.05em; */
+    line-height: 1.5em;
     /* background-image: url("./images/leather-brown.png"); */
     /* background: linear-gradient(to bottom left, var(--blue1), var(--blue2)); */
     /* background-image: url("./images/DD-Forest-Background-60012-Preview.jpg");
@@ -45,6 +48,7 @@ body::before{
 /* Header items */
 header{
     display: flex;
+
 }
 
 nav{
@@ -60,6 +64,7 @@ a {
     display: flex;
     font-size: 0.85em;
     word-spacing: 0;
+    
 }
 
 
@@ -75,7 +80,7 @@ a {
 
 #mainnav>a:hover{
     color: var(--purple1);
-    background: var(--blue3);
+    background: var(--blue4);
 }
 
 @media  (max-width: 600px){
@@ -91,6 +96,10 @@ a {
         margin-top: 2em;
         width: 100%;
     }
+}
+
+.selectednav{
+    background: var(--blue3) !important;
 }
 
 #profilemaincontainer{
@@ -200,6 +209,7 @@ footer{
     flex: 1 1 auto;
     margin-left: 2em;
     margin-top: 4em;
+    /* letter-spacing: 0.075em; */
 }
 
 #projectsmaincontainer, #educationmaincontainer, #othermaincontainer, #contactmaincontainer{
@@ -216,5 +226,7 @@ footer{
 
 
 
-/* For the  page */
+#contactmainsection{
+    /* letter-spacing: 0; */
+}
 
