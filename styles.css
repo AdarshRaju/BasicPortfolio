@@ -4,6 +4,8 @@
     --blue3: rgb(5, 38, 67);
     --blue4: rgb(20, 62, 100);
     --purple1: rgb(83, 77, 171);
+    --backg1: rgba(60,133,148,255);
+    --backg2: rgba(214,213,195,255);
 }
 
 body{
@@ -203,7 +205,7 @@ footer{
 
 /* For the Projects.html, education.html pages */
 
-#projectsmainsection, #educationmainsection, #othermainsection, #contactmainsection{
+#projectsmainsection, #educationmainsection, #otherworksmainsection, #otherprojectsmainsection, #contactmainsection,#summarymainsection{
     justify-self: flex-start;
     margin-top: 0;
     flex: 1 1 auto;
@@ -212,21 +214,28 @@ footer{
     /* letter-spacing: 0.075em; */
 }
 
-#projectsmaincontainer, #educationmaincontainer, #othermaincontainer, #contactmaincontainer{
+#projectsmaincontainer, #educationmaincontainer, #otherworksmaincontainer, #otherprojectsmaincontainer, #contactmaincontainer, #summarymaincontainer{
     display: flex;
     flex-direction: column;
     width: 50%;
+    justify-self: space-between;
     margin-bottom: 2em;
     color: black;
 }
 
-#part2projects, #edupart2, #otherpart2{
-    color: white;
+#projectsinnercontainer{
+    /* column-count: 2; */
+}
+
+#part2projects, #edupart2, #otherworkspart2, #otherprojectspart2{
+    /* color: white; */
+    /* column-count: 2; */
 }
 
 
 
-#contactmainsection{
-    /* letter-spacing: 0; */
+#projectsbody::before, #educationbody::before, #otherworksbody::before, #otherprojectsbody::before, #summarybody::before{
+    /* background-image: url("./images/leather-brown.png"); */
+    background: linear-gradient( to bottom left, var(--backg1), var(--backg2));
 }
 
